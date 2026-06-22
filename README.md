@@ -1,59 +1,46 @@
-# ACME Sales & Inventory Analytics
-A full SQL + Excel + Python analysis of customer behavior, product performance, payment methods, and inventory efficiency.
+# ACME Company Analysis - 2023
+This repository contains a concise, reproducible analysis of ACME’s 2023 operations: customer distribution, product performance, payment behavior, and inventory management. The analysis was performed using SQL queries executed in Microsoft Access and forecasting/visualization in Excel.
+The dataset used for this analysis is fictional and designed to simulate realistic business conditions.
 
-## Overview
-This project analyzes ACME’s sales and operational data from 2020–2023 and produces 2024 forecasts using SQL, Excel, and Python.
-The goal is to identify:
-* Customer trends by province
-* Best and worst performing products
-* Payment method usage
-* Inventory inefficiencies
-* Actionable recommendations for management
-The project demonstrates skills in SQL, data cleaning, forecasting, visualization, and business analytics.
+## Project Overview
+Goal: evaluate ACME’s 2023 performance and produce 2024 projections to inform marketing, product, payment, and inventory decisions.
+Focus areas:
+* Customer trends by region
+* Top and bottom product performance
+* Payment method usage and revenue
+* Inventory efficiency and warehouse distribution
+Final deliverable: report/ACME Company Report 2023 (PDF/DOCX).
+
+# Data Source Notes
+The SQL queries for this project were executed in Microsoft Access. The original Access database is no longer accessible; however, all extracted tables used in the analysis are included in the data/ folder to ensure reproducibility.
 
 ## Project Structure
-(You already saw the full tree above.)
+acme-buisness-analysis/
+* data/ - Exported tables used for analysis (CSV or XLSX)
+* visuals/ - Exported charts used in the report (PNG)
+* report/ - Final ACME Company Report (PDF or DOCX)
+* sql/ - Text copies or screenshots of Access SQL queries
 
-## Key Analyses
-1. Customers by Region
-   * SQL extraction of yearly customers + revenue
-   * 20% adjustment for incomplete 2023 data
-   * Linear forecast for 2024
-   * Geographic visualization of customer concentration
-   * Insights on declining provinces (Alberta, New Brunswick)
-Recommendations for marketing + shipping optimization
+## Tools & Workflow
+* Microsoft Access - SQL queries and data extraction
+* Excel - forecasting models, charts, and visualizations
+* Word / PDF - final report formatting
+No external scripts or notebooks were used.
 
-2. Best & Worst Products
-   * SQL extraction of top/bottom 10 products
-   * Trend‑based filtering to avoid misleading rankings
-   * Linear forecasts for 2024
-   * Identification of products projected to generate negative revenue
-Recommendations for clearance, pricing, and marketing
+## Key Findings (high level)
+* Customer Growth: Quebec and Manitoba show strong growth; Alberta and New Brunswick are declining.
+* Product Performance: Top products drive revenue; bottom products show declining or negative projected revenue.
+* Payments: VISA dominates; ApplePay adoption is rising.
+* Inventory: Significant overstocking and stockout risks; Kelowna holds disproportionate inventory.
+See report/ACME Company Report 2023 for full details, visuals, and recommendations.
 
-3. Payment Methods
-   * SQL extraction of yearly payment totals
-   * Forecasting of 2024 usage
-   * Pie charts + line charts
-Recommendation to evaluate AMEX/PayPal due to low usage
+## Known Limitations
+The dataset is fictional and 2023 data required a 20% uplift to approximate year‑end totals. Forecasts use linear models and do not capture sudden market shifts or seasonality. See the Limitations section in the report for full details.
 
-4. Inventory Management
-   * SQL extraction of total sold vs total inventory
-   * Warehouse‑level inventory distribution
-   * Identification of severe overstocking
-Recommendation to close Kelowna warehouse + run clearance events
+## Next Steps
+* Add customer segmentation and profitability modeling.
+* Perform shipping‑time analysis for declining regions.
+* Build an inventory turnover dashboard and consider migrating to Power BI or Tableau for interactive reporting.
 
-## Tools Used
-* SQL (MySQL)
-* Excel (forecasting, pivot tables, charts)
-* Python (pandas, matplotlib, seaborn)
-* Jupyter Notebooks
-* Git & GitHub
-
-## Skills Demonstrated
-* Data extraction with SQL
-* Data cleaning & transformation
-* Forecasting (linear regression)
-* Visualization
-* Business recommendations
-* Inventory optimization
-* Report writing
+## License and Usage
+This repository is for demonstration and portfolio use. If you want to reuse or adapt the materials, please credit the author and do not present the dataset as real client data.

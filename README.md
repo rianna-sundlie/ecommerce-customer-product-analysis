@@ -11,7 +11,7 @@ Focus areas:
 * Inventory efficiency and warehouse distribution
 Final deliverable: report/ACME Company Report 2023 (PDF/DOCX).
 
-# Data Source Notes
+### Data Source Notes
 The SQL queries for this project were executed in Microsoft Access. The original Access database is no longer accessible; however, all extracted tables used in the analysis are included in the data/ folder to ensure reproducibility.
 
 ## Project Structure

@@ -25,6 +25,7 @@ acme-buisness-analysis/
 * Microsoft Access - SQL queries and data extraction
 * Excel - forecasting models, charts, and visualizations
 * Word / PDF - final report formatting
+
 No external scripts or notebooks were used.
 
 ## Key Findings (high level)
